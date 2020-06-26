@@ -6,61 +6,75 @@ namespace UsefullTools
     //MathTools
     class MathTools
     {
-        public static void AddInt(int num1, int num2)
+        public static class Special
         {
-            string answer = (num1 + num2).ToString();
+            public static void sqrtInt(int Num)
+            {
+                Num = Num / Num;
 
-            Console.WriteLine(answer);
+              
+            }
+
+            public static void sqrtFloat(float num)
+            {
+                MathF.Sqrt(num);
+            }
+
         }
 
 
-        public static void AddFloat(float num1, float num2)
+        public static void AddInt(int num1, int num2, int answer)
         {
-            string answer = (num1 + num2).ToString();
+             answer = (num1 + num2);
 
-            Console.WriteLine(answer);
         }
 
-        public static void SubtractInt(int num1, int num2)
-        {
-            string answer = (num1 - num2).ToString();
 
-            Console.WriteLine(answer);
+        public static void AddFloat(float num1, float num2, float answer)
+        {
+             answer = (num1 + num2);
+
+           
         }
 
-        public static void SubtractFloat(float num1, float num2)
+        public static void SubtractInt(int num1, int num2, int answer)
         {
-            string answer = (num1 - num2).ToString();
+             answer = (num1 - num2);
 
-            Console.WriteLine(answer);
+        
         }
 
-        public static void MultiplyInt(int num1, int num2)
+        public static void SubtractFloat(float num1, float num2, float answer)
         {
-            string answer = (num1 * num2).ToString();
+             answer = (num1 - num2);
 
-            Console.WriteLine(answer);
+ 
         }
 
-        public static void MultiplyFloat(float num1, float num2)
+        public static void MultiplyInt(int num1, int num2,  int answer)
         {
-            string answer = (num1 * num2).ToString();
+             answer = (num1 * num2);
 
-            Console.WriteLine(answer);
+          
         }
 
-        public static void DivideInt(int num1, int num2)
+        public static void MultiplyFloat(float num1, float num2, float answer)
         {
-            string answer = (num1 / num2).ToString();
+             answer = (num1 * num2);
 
-            Console.WriteLine(answer);
         }
 
-        public static void DivideFloat(float num1, float num2)
+        public static void DivideInt(int num1, int num2, int answer)
         {
-            string answer = (num1 / num2).ToString();
+             answer = (num1 / num2);
 
-            Console.WriteLine(answer);
+        }
+
+        public static void DivideFloat(float num1, float num2, float answer)
+        {
+             answer = (num1 / num2);
+
+           
         }
     }
 
