@@ -5,8 +5,31 @@ using System;
 namespace UsefullTools
 {
 
+    class MiscTools
+    {
+        public static void SayHi(string Username)
+        {
+            Console.WriteLine("Hello " + Username);
+        }
+    }
 
-    
+    //if using this directory, must use one method out of the DevStuffz Class
+    class Devstuffz
+    {
+        public static void Discord()
+        {
+            Console.WriteLine("https://discord.gg/vDG4Bz3");
+        }
+
+
+
+        public static void Website()
+        {
+            Console.WriteLine("indiegamedevs.co.page");
+        }
+
+
+    }
     
     class AI
     {
