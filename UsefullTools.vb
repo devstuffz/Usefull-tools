@@ -1,8 +1,49 @@
 Imports System
-Imports System.Runtime.Versioning
 
 Namespace UsefullTools
     Class MathTools
+        Module Basic
+            Sub AddInt(ByVal num1 As Integer, ByVal num2 As Integer, ByVal answer As Integer)
+                answer = (num1 + num2)
+            End Sub
+
+            Sub AddFloat(ByVal num1 As Single, ByVal num2 As Single, ByVal answer As Single)
+                answer = (num1 + num2)
+            End Sub
+
+            Sub SubtractInt(ByVal num1 As Integer, ByVal num2 As Integer, ByVal answer As Integer)
+                answer = (num1 - num2)
+            End Sub
+
+            Sub SubtractFloat(ByVal num1 As Single, ByVal num2 As Single, ByVal answer As Single)
+                answer = (num1 - num2)
+            End Sub
+
+            Sub MultiplyInt(ByVal num1 As Integer, ByVal num2 As Integer, ByVal answer As Integer)
+                answer = (num1 * num2)
+            End Sub
+
+            Sub MultiplyFloat(ByVal num1 As Single, ByVal num2 As Single, ByVal answer As Single)
+                answer = (num1 * num2)
+            End Sub
+
+            Sub DivideInt(ByVal num1 As Integer, ByVal num2 As Integer, ByVal answer As Integer)
+                answer = (num1 / num2)
+            End Sub
+
+            Sub DivideFloat(ByVal num1 As Single, ByVal num2 As Single, ByVal answer As Single)
+                answer = (num1 / num2)
+            End Sub
+        End Module
+
+        Public Shared Sub RoundInt(ByVal num As Integer)
+            MathF.Round(num)
+        End Sub
+
+        Public Shared Sub RoundFloat(ByVal num As Single)
+            MathF.Round(num)
+        End Sub
+
         Module Square
             Sub sqrdInt(ByVal Num As Integer)
                 Num = Num * Num
@@ -21,38 +62,6 @@ Namespace UsefullTools
             End Sub
         End Module
 
-        Public Shared Sub AddInt(ByVal num1 As Integer, ByVal num2 As Integer, ByVal answer As Integer)
-            answer = (num1 + num2)
-        End Sub
-
-        Public Shared Sub AddFloat(ByVal num1 As Single, ByVal num2 As Single, ByVal answer As Single)
-            answer = (num1 + num2)
-        End Sub
-
-        Public Shared Sub SubtractInt(ByVal num1 As Integer, ByVal num2 As Integer, ByVal answer As Integer)
-            answer = (num1 - num2)
-        End Sub
-
-        Public Shared Sub SubtractFloat(ByVal num1 As Single, ByVal num2 As Single, ByVal answer As Single)
-            answer = (num1 - num2)
-        End Sub
-
-        Public Shared Sub MultiplyInt(ByVal num1 As Integer, ByVal num2 As Integer, ByVal answer As Integer)
-            answer = (num1 * num2)
-        End Sub
-
-        Public Shared Sub MultiplyFloat(ByVal num1 As Single, ByVal num2 As Single, ByVal answer As Single)
-            answer = (num1 * num2)
-        End Sub
-
-        Public Shared Sub DivideInt(ByVal num1 As Integer, ByVal num2 As Integer, ByVal answer As Integer)
-            answer = (num1 / num2)
-        End Sub
-
-        Public Shared Sub DivideFloat(ByVal num1 As Single, ByVal num2 As Single, ByVal answer As Single)
-            answer = (num1 / num2)
-        End Sub
-
         Module RandomNum
             Sub Float(ByVal num1 As Single, ByVal num2 As Single, ByVal answer As Single)
                 Dim random As Random = New Random()
@@ -66,6 +75,28 @@ Namespace UsefullTools
                 answer = random.[Next](num1, num2)
             End Sub
         End Module
+    End Class
+
+    Class ForegroundColors
+        Public Shared Sub Red()
+            Console.ForegroundColor = ConsoleColor.Red
+        End Sub
+
+        Public Shared Sub Blue()
+            Console.ForegroundColor = ConsoleColor.Blue
+        End Sub
+
+        Public Shared Sub Black()
+            Console.ForegroundColor = ConsoleColor.Black
+        End Sub
+
+        Public Shared Sub White()
+            Console.ForegroundColor = ConsoleColor.White
+        End Sub
+
+        Public Shared Sub Reset()
+            Console.ResetColor()
+        End Sub
     End Class
 
     Class ConsoleTools
