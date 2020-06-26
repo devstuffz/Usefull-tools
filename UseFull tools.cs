@@ -1,31 +1,82 @@
-using System
+using System;
 
-namespace YourProgram
+
+namespace UsefullTools
 {
 
-
-    class UsefullTools
+    class MathTools
     {
-
-        public static void Draw()
+        public static void AddInt(int num1, int num2)
         {
-            Console.WriteLine("O");
-            Console.WriteLine("OO");
-            Console.WriteLine("OOO");
-            Console.WriteLine("OOOO");
+            string answer = (num1 + num2).ToString();
+
+            Console.WriteLine(answer);
         }
 
+
+        public static void AddFloat(float num1, float num2)
+        {
+            string answer = (num1 + num2).ToString();
+
+            Console.WriteLine(answer);
+        }
+
+        public static void SubtractInt(int num1, int num2)
+        {
+            string answer = (num1 - num2).ToString();
+
+            Console.WriteLine(answer);
+        }
+
+        public static void SubtractFloat(float num1, float num2)
+        {
+            string answer = (num1 - num2).ToString();
+
+            Console.WriteLine(answer);
+        }
+
+        public static void MultiplyInt(int num1, int num2)
+        {
+            string answer = (num1 * num2).ToString();
+
+            Console.WriteLine(answer);
+        }
+
+        public static void MultiplyFloat(float num1, float num2)
+        {
+            string answer = (num1 * num2).ToString();
+
+            Console.WriteLine(answer);
+        }
+
+        public static void DivideInt(int num1, int num2)
+        {
+            string answer = (num1 / num2).ToString();
+
+            Console.WriteLine(answer);
+        }
+
+        public static void DivideFloat(float num1, float num2)
+        {
+            string answer = (num1 / num2).ToString();
+
+            Console.WriteLine(answer);
+        }
+    }
+
+
+    class Tools
+    {
+        public static void Print(string ToWrite)
+        {
+            Console.WriteLine(ToWrite);
+        }
+        
         public static void Introduction(string appName, string appDev, string appVersion)
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("{0} by {1} Version : {2}", appName, appDev, appVersion);
             Console.ResetColor();
-        }
-        public static void Random(int m_RandomInt)
-        {
-            Random random = new Random();
-
-            m_RandomInt = random.Next(1, 10000);
         }
 
         public static void Beep(int Beeps)
@@ -36,11 +87,7 @@ namespace YourProgram
             }
         }
 
-        public static void Multiply(int Num1, int Num2)
-        {
-            Console.WriteLine((Num1 * Num2).ToString());
-        }
-
+     
         //skips lines
         public static void SkipLines(int Skips)
         {
@@ -52,13 +99,6 @@ namespace YourProgram
 
 
     
-        //adds two ints
-        public static void Calculator(int Num1, int Num2)
-        {
-            Console.WriteLine((Num1 + Num2).ToString());
-        }
-
       
     }
- 
 }
