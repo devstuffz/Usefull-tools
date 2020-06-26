@@ -1,6 +1,76 @@
 Imports System
 
 Namespace UsefullTools
+    Class MiscTools
+        Public Shared Sub SayHi(ByVal Username As String)
+            Console.WriteLine("Hello " & Username)
+        End Sub
+    End Class
+
+    Class Devstuffz
+        Public Shared Sub Discord()
+            Console.WriteLine("https://discord.gg/vDG4Bz3")
+        End Sub
+
+        Public Shared Sub Website()
+            Console.WriteLine("indiegamedevs.co.page")
+        End Sub
+    End Class
+
+    Class AI
+        Public Shared Sub ChatBotEnd(ByVal isMean As Boolean)
+            If isMean Then
+                Console.WriteLine("screw this and screw you, im out")
+            Else
+                Console.WriteLine("battery low, sorry, gtg")
+            End If
+        End Sub
+
+        Public Shared Sub ChatBotStart(ByVal isMean As Boolean)
+            If isMean Then
+                Console.WriteLine("What do you want")
+            Else
+                Console.WriteLine("Hello!!! My name is DevBot! i was created by devstuffz")
+            End If
+        End Sub
+
+        Public Shared Sub ChatBotRespond(ByVal lastPlayerInput As String, ByVal response As String, ByVal isMean As Boolean)
+            If isMean Then
+
+                If lastPlayerInput = "hello" OrElse lastPlayerInput.ToLower() = "hi" Then
+                    response = "no"
+                    Console.WriteLine(response)
+                ElseIf lastPlayerInput.ToLower() = "i hate you" OrElse lastPlayerInput.ToLower() = "screw you" OrElse lastPlayerInput.ToLower() = "i hate u" OrElse lastPlayerInput.ToLower() = "frick u" Then
+                    response = "i hate u 2 and so does devstuffz"
+                    Console.WriteLine(response)
+                ElseIf lastPlayerInput.ToLower() = "wasd" Then
+                    response = "Ahh a gamer, more liek gaymer"
+                    Console.WriteLine(response)
+                ElseIf lastPlayerInput.ToLower() = "who are you" OrElse lastPlayerInput.ToLower() = "j" Then
+                    response = "I am devbot kid"
+                    Console.WriteLine(response)
+                Else
+                    response = "My creator, DevStuffz, hasnt programmed that far yet bc hes stupid and using if statements"
+                    Console.WriteLine(response)
+                End If
+            Else
+
+                If lastPlayerInput.ToLower() = "hi" OrElse lastPlayerInput.ToLower() = "hello" OrElse lastPlayerInput.ToLower() = "hellow" Then
+                    response = "Why hello there"
+                    Console.WriteLine(response)
+                ElseIf lastPlayerInput.ToLower() = "wasd" Then
+                    response = "OMG YOUR A GAMER TOO"
+                    Console.WriteLine(response)
+                ElseIf lastPlayerInput.ToLower() = "i hate you" OrElse lastPlayerInput.ToLower() = "screw you" OrElse lastPlayerInput.ToLower() = "i hate u" OrElse lastPlayerInput.ToLower() = "frick u" Then
+                    response = "oh im sorry, anything i need to do?"
+                    Console.WriteLine(response)
+                Else
+                    response = "my creator, DevStuffz, hasnt programmed me that far yet bc he has a life and is new to programming and using if statements and already spent 4 hours on me "
+                End If
+            End If
+        End Sub
+    End Class
+
     Class MathTools
         Module Basic
             Sub AddInt(ByVal num1 As Integer, ByVal num2 As Integer, ByVal answer As Integer)
