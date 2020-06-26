@@ -1,10 +1,31 @@
- class UsefullTools
+using System
+
+namespace YourProgram
+{
+
+
+    class UsefullTools
     {
+
+        public static void Draw()
+        {
+            Console.WriteLine("O");
+            Console.WriteLine("OO");
+            Console.WriteLine("OOO");
+            Console.WriteLine("OOOO");
+        }
+
+        public static void Introduction(string appName, string appDev, string appVersion)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("{0} by {1} Version : {2}", appName, appDev, appVersion);
+            Console.ResetColor();
+        }
         public static void Random(int m_RandomInt)
         {
             Random random = new Random();
 
-            m_RandomInt = random.Next(1, 10000)
+            m_RandomInt = random.Next(1, 10000);
         }
 
         public static void Beep(int Beeps)
@@ -39,3 +60,5 @@
 
       
     }
+ 
+}
