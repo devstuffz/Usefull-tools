@@ -3,7 +3,7 @@ using System;
 
 namespace UsefullTools
 {
-
+    //MathTools
     class MathTools
     {
         public static void AddInt(int num1, int num2)
@@ -64,29 +64,11 @@ namespace UsefullTools
         }
     }
 
-
-    class Tools
+    
+    //ConsoleTools
+    class ConsoleTools
     {
-        public static void Print(string ToWrite)
-        {
-            Console.WriteLine(ToWrite);
-        }
         
-        public static void Introduction(string appName, string appDev, string appVersion)
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("{0} by {1} Version : {2}", appName, appDev, appVersion);
-            Console.ResetColor();
-        }
-
-        public static void Beep(int Beeps)
-        {
-            for (int i = 0; i < Beeps; i++)
-            {
-                Console.Beep();
-            }
-        }
-
      
         //skips lines
         public static void SkipLines(int Skips)
@@ -97,8 +79,14 @@ namespace UsefullTools
             }
         }
 
+        
 
+        public static void RenameTitle(string ConsoleName)
+        {
+            Console.Title = ConsoleName;
+        }
     
       
     }
 }
+
