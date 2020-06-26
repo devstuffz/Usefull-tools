@@ -1,15 +1,122 @@
+
+  
 using System;
 
 namespace UsefullTools
 {
 
+
     
+    
+    class AI
+    {
+            
+        public static void ChatBotEnd(bool isMean)
+        {
+            if (isMean)
+            {
+                Console.WriteLine("screw this and screw you, im out");
+            }
+            else
+            {
+                Console.WriteLine("battery low, sorry, gtg");
+            }
+        }
+
+
+        public static void ChatBotStart(bool isMean)
+        {
+            if (isMean)
+            {
+                Console.WriteLine("What do you want");
+            }
+            else
+            {
+                Console.WriteLine("Hello!!! My name is DevBot! i was created by devstuffz");
+            }
+        }
+
+
+        public static void ChatBotRespond(string lastPlayerInput, string response, bool isMean)
+        {
+
+            
+
+            if (isMean)
+            {
+
+                if (lastPlayerInput == "hello" || lastPlayerInput.ToLower() == "hi")
+                {
+                    response = "no";
+
+                    Console.WriteLine(response);
+                }
+
+                else if (lastPlayerInput.ToLower() == "i hate you" || lastPlayerInput.ToLower() == "screw you" || lastPlayerInput.ToLower() == "i hate u" || lastPlayerInput.ToLower() == "frick u")
+
+
+
+                {
+                    response = "i hate u 2 and so does devstuffz";
+
+                    Console.WriteLine(response);
+                }
+
+                else if (lastPlayerInput.ToLower() == "wasd")
+                {
+                    response = "Ahh a gamer, more liek gaymer";
+                    Console.WriteLine(response);
+                }
+
+                else if (lastPlayerInput.ToLower() == "who are you" || lastPlayerInput.ToLower() == "j")
+                {
+                    response = "I am devbot kid";
+
+                    Console.WriteLine(response);
+                }
+
+                else
+                {
+                    response = "My creator, DevStuffz, hasnt programmed that far yet bc hes stupid and using if statements";
+
+                    Console.WriteLine(response);
+                }
+            }
+            else
+            {
+                if (lastPlayerInput.ToLower() == "hi" || lastPlayerInput.ToLower() == "hello" || lastPlayerInput.ToLower() == "hellow")
+                {
+                    response = "Why hello there";
+
+                    Console.WriteLine(response);
+                }
+                else if (lastPlayerInput.ToLower() == "wasd")
+                {
+                    response = "OMG YOUR A GAMER TOO";
+
+                    Console.WriteLine(response);
+                }
+                else if (lastPlayerInput.ToLower() == "i hate you" || lastPlayerInput.ToLower() == "screw you" || lastPlayerInput.ToLower() == "i hate u" || lastPlayerInput.ToLower() == "frick u")
+                {
+                    response = "oh im sorry, anything i need to do?";
+                    Console.WriteLine(response);
+                }
+                else
+                {
+                    response = "my creator, DevStuffz, hasnt programmed me that far yet bc he has a life and is new to programming and using if statements and already spent 4 hours on me ";
+                }
+            }
+
+          
+        }
+    }
 
 
     //MathTools
     class MathTools
     {
-
+        
+ 
         public static class Basic
         {
 
@@ -23,7 +130,7 @@ namespace UsefullTools
             public static void AddFloat(float num1, float num2, float answer)
             {
                 answer = (num1 + num2);
-
+                
 
             }
 
@@ -97,7 +204,7 @@ namespace UsefullTools
             {
                 Num = Num / Num;
 
-              
+
             }
 
             public static void sqrtFloat(float num)
@@ -110,9 +217,9 @@ namespace UsefullTools
 
 
         public static class RandomNum
-        { 
-        
-             public static void Float(float num1, float num2, float answer)
+        {
+
+            public static void Float(float num1, float num2, float answer)
             {
                 Random random = new Random();
 
@@ -120,7 +227,7 @@ namespace UsefullTools
                 int intNumTwo = Convert.ToInt32(num2);
 
                 answer = random.Next(intNumOne, intNumTwo + 1);
-            }    
+            }
 
 
             public static void Int(int num1, int num2, int answer)
@@ -133,7 +240,7 @@ namespace UsefullTools
         }
     }
 
-    
+
     class ForegroundColors
     {
         public static void Red()
@@ -164,28 +271,25 @@ namespace UsefullTools
             Console.ResetColor();
         }
     }
-    
+
 
     //ConsoleTools
     class ConsoleTools
     {
-     
+
 
         public static class Fun
         {
-/*
-            public static void Quote(string quote)
-            {
-                string[] newQuote = { "If you have a dream about beating me, wake up and apologize - Muhamad Ali", "Never gonna give you up - Rick Astley" };
-
-                Random random = new Random();
-
-                int m_Int = random.Next(0, 1);
-                MathF.Round(m_Int);
-
-                quote = newQuote[m_Int];
-            }
-            */
+            /*
+                        public static void Quote(string quote)
+                        {
+                            string[] newQuote = { "If you have a dream about beating me, wake up and apologize - Muhamad Ali", "Never gonna give you up - Rick Astley" };
+                            Random random = new Random();
+                            int m_Int = random.Next(0, 1);
+                            MathF.Round(m_Int);
+                            quote = newQuote[m_Int];
+                        }
+                        */
 
             public static void Troll(int length)
             {
@@ -199,8 +303,8 @@ namespace UsefullTools
                     Console.WriteLine("Never Gonna say goodbye");
                     Console.WriteLine("Never gonna tell a lie");
                     Console.WriteLine("Or Hurt You");
-                    
-                    
+
+
                 }
             }
 
@@ -224,7 +328,7 @@ namespace UsefullTools
                 Console.ReadLine();
             }
         }
-     
+
         //skips lines
         public static void SkipLines(int Skips)
         {
@@ -234,10 +338,10 @@ namespace UsefullTools
             }
         }
 
-        
 
-    
-      
+
+
+
     }
 }
 
