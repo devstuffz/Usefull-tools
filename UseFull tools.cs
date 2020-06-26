@@ -1,11 +1,85 @@
 using System;
-using System.Runtime.Versioning;
 
 namespace UsefullTools
 {
+
+    
+
+
     //MathTools
     class MathTools
     {
+
+        public static class Basic
+        {
+
+            public static void AddInt(int num1, int num2, int answer)
+            {
+                answer = (num1 + num2);
+
+            }
+
+
+            public static void AddFloat(float num1, float num2, float answer)
+            {
+                answer = (num1 + num2);
+
+
+            }
+
+            public static void SubtractInt(int num1, int num2, int answer)
+            {
+                answer = (num1 - num2);
+
+
+            }
+
+            public static void SubtractFloat(float num1, float num2, float answer)
+            {
+                answer = (num1 - num2);
+
+
+            }
+
+            public static void MultiplyInt(int num1, int num2, int answer)
+            {
+                answer = (num1 * num2);
+
+
+            }
+
+            public static void MultiplyFloat(float num1, float num2, float answer)
+            {
+                answer = (num1 * num2);
+
+            }
+
+            public static void DivideInt(int num1, int num2, int answer)
+            {
+                answer = (num1 / num2);
+
+            }
+
+            public static void DivideFloat(float num1, float num2, float answer)
+            {
+                answer = (num1 / num2);
+
+
+            }
+        }
+
+        public static void RoundInt(int num)
+        {
+            MathF.Round(num);
+        }
+
+        public static void RoundFloat(float num)
+        {
+            MathF.Round(num);
+        }
+
+
+
         public static class Square
         {
 
@@ -34,60 +108,6 @@ namespace UsefullTools
         }
 
 
-        public static void AddInt(int num1, int num2, int answer)
-        {
-             answer = (num1 + num2);
-
-        }
-
-
-        public static void AddFloat(float num1, float num2, float answer)
-        {
-             answer = (num1 + num2);
-
-           
-        }
-
-        public static void SubtractInt(int num1, int num2, int answer)
-        {
-             answer = (num1 - num2);
-
-        
-        }
-
-        public static void SubtractFloat(float num1, float num2, float answer)
-        {
-             answer = (num1 - num2);
-
- 
-        }
-
-        public static void MultiplyInt(int num1, int num2,  int answer)
-        {
-             answer = (num1 * num2);
-
-          
-        }
-
-        public static void MultiplyFloat(float num1, float num2, float answer)
-        {
-             answer = (num1 * num2);
-
-        }
-
-        public static void DivideInt(int num1, int num2, int answer)
-        {
-             answer = (num1 / num2);
-
-        }
-
-        public static void DivideFloat(float num1, float num2, float answer)
-        {
-             answer = (num1 / num2);
-
-           
-        }
-
 
         public static class RandomNum
         { 
@@ -114,11 +134,59 @@ namespace UsefullTools
     }
 
     
+    class ForegroundColors
+    {
+        public static void Red()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+        }
+
+        public static void Blue()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+        }
+
+
+        public static void Black()
+        {
+            Console.ForegroundColor = ConsoleColor.Black;
+        }
+
+
+        public static void White()
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+
+
+        public static void Reset()
+        {
+            Console.ResetColor();
+        }
+    }
+    
+
     //ConsoleTools
     class ConsoleTools
     {
+     
+
         public static class Fun
         {
+/*
+            public static void Quote(string quote)
+            {
+                string[] newQuote = { "If you have a dream about beating me, wake up and apologize - Muhamad Ali", "Never gonna give you up - Rick Astley" };
+
+                Random random = new Random();
+
+                int m_Int = random.Next(0, 1);
+                MathF.Round(m_Int);
+
+                quote = newQuote[m_Int];
+            }
+            */
+
             public static void Troll(int length)
             {
                 for (int i = 0; i < length; i++)
